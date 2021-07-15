@@ -1,0 +1,458 @@
+html {
+  width: 100vw;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  background-color: gainsboro;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+h2 {
+  font-family: acier-bat-gris, sans-serif;
+  color: grey;
+}
+
+header {
+  width: 100%;
+  min-height: 5vh;
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    width: 100%;
+    min-height: 10vh;
+  }
+}
+
+header nav {
+  width: 100%;
+  min-height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid grey 2px;
+  background-color: gainsboro;
+  position: fixed;
+}
+
+@media screen and (min-width: 1024px) {
+  header nav {
+    width: 100%;
+    height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-bottom: solid grey 2px;
+    background-color: gainsboro;
+    position: fixed;
+  }
+}
+
+.brand-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  display: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .brand-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-flex: 15%;
+        -ms-flex: 15%;
+            flex: 15%;
+  }
+}
+
+.brand-name h2 {
+  color: black;
+  font-family: acier-bat-gris, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2vw;
+}
+
+@media screen and (min-width: 1024px) {
+  .brand-name h2 {
+    color: black;
+    font-family: acier-bat-gris, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 85%;
+        -ms-flex: 85%;
+            flex: 85%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    width: 100%;
+  }
+}
+
+.navlink {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navlink button {
+  border-style: none;
+  background-color: gainsboro;
+  height: 90%;
+}
+
+.navlink button a {
+  text-decoration: none;
+  color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 1024px) {
+  .navlink button:hover {
+    color: gainsboro;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+}
+
+.navlink-xl {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .navlink-xl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .navlink-xl button {
+    border-style: none;
+    background-color: gainsboro;
+    height: 90%;
+  }
+  .navlink-xl button:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .navlink-xl button a {
+    text-decoration: none;
+    color: grey;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #forxl1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #c44c24;
+  }
+}
+
+#fornavbar {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  #fornavbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 5vw;
+    height: 90%;
+  }
+  #fornavbar a {
+    color: grey;
+    text-decoration: none;
+    margin: 10%;
+  }
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .events-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-height: 5vh;
+}
+
+.events-nav button {
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #272928;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 1px solid grey;
+}
+
+.events-nav button a {
+  color: gainsboro;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.carousel h2 {
+  text-align: center;
+  color: grey;
+}
+
+.carousel h3, p {
+  color: gainsboro;
+}
+
+.carousel-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  padding: 0;
+}
+
+.carousel-item {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-preferred-size: 70vw;
+      flex-basis: 70vw;
+  background-color: grey;
+  border: 1px solid grey;
+  border-radius: 20px;
+}
+
+.card {
+  padding: 1rem;
+}
+
+.card-img {
+  width: 70vw;
+  height: 30vh;
+  border-radius: 20px;
+  border: 1px solid gainsboro;
+}
+
+.place::before {
+  content: '\f015';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+
+.date::before {
+  content: '\f073';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+
+.price::before {
+  content: '\f02b';
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+}
+
+footer {
+  background-color: #272928;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+footer h2 {
+  color: gainsboro;
+  font-family: acier-bat-gris, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer h4 {
+  color: gainsboro;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.menu-foot {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 50%;
+  max-height: 50%;
+}
+
+.menu-foot a {
+  text-decoration: none;
+  color: gainsboro;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.social-network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 5%;
+  width: 50%;
+}
+
+.social-network a {
+  text-decoration: none;
+  color: gainsboro;
+}
+
+.social-network h4 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.icones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.scroll-top {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+}
+
+#arrow-top {
+  color: orangered;
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style-evenement.css.map */
