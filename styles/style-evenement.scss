@@ -206,6 +206,7 @@ main {
     display: flex;
     flex: 1;
     flex-direction: column;
+    margin-bottom: 10vw;
 
 }
 main .events-nav {
@@ -219,11 +220,13 @@ main .events-nav {
     flex: 1;
     background-color: rgb(39, 41, 40);
     justify-content: center;
-    border-right: 1px solid grey;
+    border: none;
 
     & a {
         color: gainsboro;
         align-self: center  ;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
 
     }
 }
@@ -245,9 +248,11 @@ main .events-nav {
 .carousel-item {
     margin-left: 1rem;
     margin-right: 1rem;
+    padding-bottom:  2rem;
+    padding-top: 1rem;
     flex-shrink: 0;
     flex-basis: 70vw;
-    background-color: grey;
+    background-color: rgb(39, 41, 40);
     border: 1px solid grey;
     border-radius: 20px;
 }
@@ -279,6 +284,18 @@ main .events-nav {
     font-family: "Font Awesome 5 Free";
     
 }
+.card-footer button {
+    background-color: rgb(4, 94, 100);
+    border: none;
+    border-radius: 10px;
+    width: 6rem;
+    height: 3rem;
+    cursor: pointer;
+    & a {
+        color: gainsboro;
+    }
+}
+
 
 
 

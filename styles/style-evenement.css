@@ -262,6 +262,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 10vw;
 }
 
 main .events-nav {
@@ -284,7 +285,7 @@ main .events-nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-right: 1px solid grey;
+  border: none;
 }
 
 .events-nav button a {
@@ -292,6 +293,8 @@ main .events-nav {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .carousel h2 {
@@ -315,11 +318,13 @@ main .events-nav {
 .carousel-item {
   margin-left: 1rem;
   margin-right: 1rem;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   -ms-flex-preferred-size: 70vw;
       flex-basis: 70vw;
-  background-color: grey;
+  background-color: #272928;
   border: 1px solid grey;
   border-radius: 20px;
 }
@@ -351,6 +356,19 @@ main .events-nav {
   content: '\f02b';
   font-weight: 900;
   font-family: "Font Awesome 5 Free";
+}
+
+.card-footer button {
+  background-color: #045e64;
+  border: none;
+  border-radius: 10px;
+  width: 6rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.card-footer button a {
+  color: gainsboro;
 }
 
 footer {
