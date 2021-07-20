@@ -311,7 +311,7 @@ header nav {
   font-size: 3rem;
 }
 
-.content-top p#subtitle {
+.content-top p#slogan {
   color: gainsboro;
   font-family: acier-bat-gris, sans-serif;
   -ms-flex-item-align: center;
@@ -336,7 +336,7 @@ header nav {
   .content-top h1 {
     font-size: 6rem;
   }
-  .content-top p#subtitle {
+  .content-top p#slogan {
     color: grey;
     font-family: acier-bat-gris, sans-serif;
   }

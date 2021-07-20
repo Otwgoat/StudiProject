@@ -1,0 +1,60 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+}
+.brand h1 {
+    align-self: flex-start;
+    color: black;
+    font-family: acier-bat-gris, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    align-self: center;
+    margin: 15px 0px 2px 0px;
+    font-size: 5rem;
+}
+.brand #slogan {
+    color: grey;
+    font-family: acier-bat-gris, sans-serif;
+    align-self: center;
+    margin: 0;
+}
+.oups {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    
+}
+.oups p {
+    color: grey;
+    text-align: center;
+}
+.oups button {
+    width: 25%;
+    align-self: center;
+    background-color: rgb(4, 94, 100);
+    border: none;
+    border-radius: 10px;
+    height: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    
+        
+}
+
+.oups button a {
+    text-decoration: none;
+    color: gainsboro;
+}
+.oups button:hover {
+    transform: scale(1.2);
+    transition: 00.5s;
+}
