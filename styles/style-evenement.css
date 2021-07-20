@@ -29,6 +29,10 @@ h2 {
   color: grey;
 }
 
+h2 a {
+  color: black;
+}
+
 header {
   width: 100%;
   min-height: 5vh;
